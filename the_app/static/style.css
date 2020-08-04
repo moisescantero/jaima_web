@@ -1,0 +1,59 @@
+/*CSS style for base.html*/
+.menu{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    color: white;
+
+    background-color: #462255;
+    ;
+    
+}
+
+
+.cabecera{
+    background-color: white;/*color de fondo*/
+    text-align: center;
+}
+
+.footer {/*estilo para pie de página*/
+    padding: 10px;/*relleno entre los bordes y el texto*/
+    background-color: #462255;/*color de fondo*/
+    color: white;/*color del texto*/
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%
+    
+    
+}
+
+.button{
+    color: white; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+    background-color: #462255;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.base_content{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: justify;
+    padding-bottom: 50px;
+    color: white
+    
+}
+
+.angel_body{
+    color: black;
+    text-align: center;
+    font-size: large;
+    
+}
+
+
+

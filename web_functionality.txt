@@ -1,0 +1,18 @@
+```# Create a virtual scope:
+In terminal -> python -m venv venv
+add to .gitignore -> venv/
+set venv\Scripts\activate in terminal to activate virtual scope
+```
+
+```# Install libraries use:
+In terminal -> pip install "name of library" (requests, jinja, etc)
+```
+
+```# .env file (For use only flask run in terminal to view the changes of our web)
+FLASK_APP = entry point
+FLASK_ENV = work´s scope
+Put in .gitignore IMPORTANT FOR NOT UPLOAD AT GITHUB (UPLOAD AT GITHUB .env_template)
+After create both files install in terminal using pip install python-dotenv
+´´´
+
+

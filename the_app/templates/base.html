@@ -1,0 +1,52 @@
+<!-- plantilla base para página web-->
+
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>La jaima y fiesta, S.L. | {% block titulo %}{% endblock %} </title>
+            <!-- Estilos para la web en CSS-->
+            <link rel="stylesheet" type="text/css" href="/static/style.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
+            <link rel="stylesheet" type="text/css" href="/static/normalize.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
+            <link rel="stylesheet" type="text/css" href="/static/skeleton.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
+            
+            <link rel="shortcut icon" href="{{ url_for('static', filename='logo30d_200_jaima.png') }}">
+            
+
+            <!--Hasta aquí estilos para la web en CSS-->
+        </head>
+        <header>
+            <div class="cabecera"> <img src="/static/img/logo30d_200_jaima.png"> </div>
+        </header>
+
+        <section class="u-full-width">
+            <div class="row">
+                <div class="menu">
+                    <a class="button" href="/">Inicio</a>  <a class="button" href="/about_us">Nosotros</a> 
+                    <a class="button" href="/rents">Alquiler</a> <a class="button" href="/sales">Venta de trajes</a> 
+                    <a class="button" href="/actuality">Actualidad</a> <a class="button" href="/contact">Contacto</a>
+                </div>
+            </div>
+        </section>
+
+        <body>
+                {% block contenido %}
+            
+                <div class="row">
+                    
+                        <div style="font-size: 50px">
+                        La jaima con su eslógan "Creamos ilusión" por bandera, tiene los mejores trajes para las fiestas de moros y cristianos,
+                        cabalgatas de reyes y capitanías para tu población.
+                        </div>
+            
+                </div>
+            
+                {% endblock %}
+            
+        
+        </body>
+        <div class="footer">
+            &copy; La Jaima y Fiesta, S.L. - Todos los derechos reservados.<!--esto es un entities para pintar el símbolo copyright-->
+        </div>
+</html>
+
