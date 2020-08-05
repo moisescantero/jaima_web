@@ -6,47 +6,73 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>La jaima y fiesta, S.L. | {% block titulo %}{% endblock %} </title>
             <!-- Estilos para la web en CSS-->
-            <link rel="stylesheet" type="text/css" href="/static/style.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
-            <link rel="stylesheet" type="text/css" href="/static/normalize.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
-            <link rel="stylesheet" type="text/css" href="/static/skeleton.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
+            <link rel="stylesheet" type="text/css" href="/static/css/style.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
+            <link rel="stylesheet" type="text/css" href="/static/css/normalize.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
+            <link rel="stylesheet" type="text/css" href="/static/css/skeleton.css"><!--Enlace a la página de estilos que contiene el CSS para dar formato a html-->
             
             <link rel="shortcut icon" href="{{ url_for('static', filename='logo30d_200_jaima.png') }}">
             
 
             <!--Hasta aquí estilos para la web en CSS-->
         </head>
-        <header>
-            <div class="cabecera"> <img src="/static/img/logo30d_200_jaima.png"> </div>
-        </header>
-
-        <section class="u-full-width">
-            <div class="row">
-                <div class="menu">
-                    <a class="button" href="/">Inicio</a>  <a class="button" href="/about_us">Nosotros</a> 
-                    <a class="button" href="/rents">Alquiler</a> <a class="button" href="/sales">Venta de trajes</a> 
-                    <a class="button" href="/actuality">Actualidad</a> <a class="button" href="/contact">Contacto</a>
-                </div>
-            </div>
-        </section>
-
         <body>
+            <header>
+                <div class="cabecera"> <img src="/static/img/logo30d_200_jaima.png"> </div>
+            </header>
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li class="has-sub"><a title="" href="/">Inicio</a>
+                        <li class="has-sub"><a title="" href="/about_us">Nosotros</a>
+                                <ul>
+                                    <li><a title="" href="/about_angel">Fundador</a></li>
+                                    <li><a title="" href="/about_exposition">Exposición</a></li>
+                                    <li><a title="" href="/about_storage">Almacenes</a></li>
+                                </ul>
+                        </li>
+
+                        <li><a title="" href="/rents">Alquiler</a>
+                            <ul>
+                                <li><a title="" href="/rents">Boatos</a></li>
+                                <li><a title="" href="/rents">Capitanes</a></li>
+                                <li><a title="" href="/rents">Escuadras hombre</a></li>
+                                <li><a title="" href="/rents">Escuadras mujer</a></li>
+                                <li><a title="" href="/rents">Niños</a></li>
+                                <li><a title="" href="/rents">Reyes magos</a></li>
+                            </ul>                        
+                        </li>
+
+                        <li><a href="/sales">Venta</a></li>
+
+                        <li><a href="/actuality">Actualidad</a><ul>
+                            <li><a href="/actuality">Blog</a></li>
+                            <li><a href="/actuality">Video</a></li>
+                            <li><a href="/actuality">Amigos en Instagram</a></li>
+                            <li><a href="/actuality">Fotos 2018</a></li>
+                            <li><a href="/actuality">Niños</a></li>
+                            <li><a href="/actuality">Reyes magos</a></li>
+                        </ul></li>
+
+                        <li><a href="/contact">Contacto</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+
                 {% block contenido %}
             
-                <div class="row">
-                    
-                        <div style="font-size: 50px">
-                        La jaima con su eslógan "Creamos ilusión" por bandera, tiene los mejores trajes para las fiestas de moros y cristianos,
-                        cabalgatas de reyes y capitanías para tu población.
-                        </div>
-            
+                <div class="parrafo_indice">
+                    La jaima con su eslógan "Creamos ilusión" por bandera, tiene los mejores trajes para las fiestas de moros y cristianos,
+                    cabalgatas de reyes y capitanías para tu población.
                 </div>
             
                 {% endblock %}
+                
             
-        
         </body>
         <div class="footer">
             &copy; La Jaima y Fiesta, S.L. - Todos los derechos reservados.<!--esto es un entities para pintar el símbolo copyright-->
         </div>
 </html>
+
 
