@@ -18,9 +18,21 @@ def about_angel():
 def about_exposition():
     return render_template("about_exposition.html")   
 
+@app.route("/about_clothing_store")
+def about_clothing_store():
+    return render_template("about_clothing_store.html")   
+
 @app.route("/rents")
 def rents():
     return render_template("rents.html")
+
+@app.route("/rents_boatos")
+def rents_boatos():
+    return render_template("rents_boatos.html")
+
+@app.route("/rents_040913_boato_marron")
+def rents_040913_boato_marron():
+    return render_template("rents_040913_boato_marron.html")
 
 @app.route("/sales")
 def sales():

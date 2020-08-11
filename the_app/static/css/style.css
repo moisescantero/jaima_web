@@ -182,15 +182,64 @@
     
 }
 
-.image_expo1{
+.image_div{
     margin-left: 325px;
-    inset-inline-start: 325px; 
-}
-.images_expo{
-
-    margin-left: 5px; 
+    inset-inline-start: 325px;
 }
 
+  
+.ampliar_img{       /* la imagen en su forma normal */
+
+    -webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
+    -moz-transform:scale(1); /*Mozilla scale version*/
+    -o-transform:scale(1); /*Opera scale version*/
+    -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+    -o-transition-duration: 0.5s; /*Opera duration version*/
+    opacity: 0.5;
+}
+.ampliar_img:hover{     /* al pasar el cursor por encima SE AMPLIA*/
+
+    -webkit-transform:scale(1.1); /*Webkit:Modificamos tamaño a escala*/
+    -moz-transform:scale(1.1); /*Mozilla:Modificamos tamaño a escala*/
+    -o-transform:scale(1.1); /*Opera:Modificamos tamaño a escala*/
+    -webkit-transition-duration: 0.5s; /*Webkit:Duración de la animación*/
+    -moz-transition-duration: 0.5s; /*Mozilla:Duración de la animació*/
+    -o-transition-duration: 0.5s; /*Opera:Duración de la animació*/
+    opacity: 1;
+}
+
+/*CSS style for rents.html, rents_boatos.html, rents_capitanes.html, rents_hombres.html, rents_mujeres.html, rents_nin@s.html 
+    and rents_reyes.html*/
+
+.rents_header{
+    margin-top: -300px;
+    text-align: left;
+    margin-left: 325px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.ampliar_img_rents{       /* la imagen en su forma normal */
+
+    -webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
+    -moz-transform:scale(1); /*Mozilla scale version*/
+    -o-transform:scale(1); /*Opera scale version*/
+    -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+    -o-transition-duration: 0.5s; /*Opera duration version*/
+    opacity: 0.5;
+}
+.ampliar_img_rents:hover{     /* al pasar el cursor por encima SE AMPLIA*/
+
+    -webkit-transform:scale(2); /*Webkit:Modificamos tamaño a escala*/
+    -moz-transform:scale(2); /*Mozilla:Modificamos tamaño a escala*/
+    -o-transform:scale(2); /*Opera:Modificamos tamaño a escala*/
+    -webkit-transition-duration: 0.5s; /*Webkit:Duración de la animación*/
+    -moz-transition-duration: 0.5s; /*Mozilla:Duración de la animació*/
+    -o-transition-duration: 0.5s; /*Opera:Duración de la animació*/
+    opacity: 1;
+}
 
 
 
