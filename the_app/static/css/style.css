@@ -141,14 +141,16 @@
 }
 
 .parrafo_indice{
-    display: table;
-    height:200px;
+    margin-top: -300px;
+    margin-left: 315px;
+    font-size: 50px;
+    text-align: center;
     
 }
 
 .footer {/*estilo para pie de página*/
     padding: 10px;/*relleno entre los bordes y el texto*/
-    background-color: #462255;/*color de fondo*/
+    background-color: #a06195;/*color de fondo*/
     color: white;/*color del texto*/
     position: fixed;
     text-align: center;
@@ -156,19 +158,21 @@
     width: 100%
 }
 
-/*CSS style for about_us.html, about_angel.html and about_exposition.html*/
-.about_us_div{
-    text-align: center;
-    background-color: #462255;
+/*CSS style for about_us.html, about_angel.html, about_exposition.html and about_store.html*/
+.about_us_header{
+    margin-top: -300px;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 10px;
     padding-bottom: 10px;
 }
 
-.about_angel_div{
-    margin-left: 10px;
+.about_us_div{
+    margin-top: -300px;
     text-align: justify;
-    padding-bottom: 50px;
-    color: black
-    
+    margin-left: 325px;
+    margin-right: 10px;
+    padding-bottom: 10px;
 }
 
 .angel_body{
@@ -177,6 +181,16 @@
     font-size: large;
     
 }
+
+.image_expo1{
+    margin-left: 325px;
+    inset-inline-start: 325px; 
+}
+.images_expo{
+
+    margin-left: 5px; 
+}
+
 
 
 
