@@ -34,6 +34,47 @@ def rents_boatos():
 def rents_040913_boato_marron():
     return render_template("rents_040913_boato_marron.html")
 
+@app.route("/rents_040015_boato_blanco")
+def rents_040015_boato_blanco():
+    return render_template("rents_040015_boato_blanco.html")
+
+@app.route("/rents_040016_boato_rojo")
+def rents_040016_boato_rojo():
+    return render_template("rents_040016_boato_rojo.html")
+
+@app.route("/rents_040014_boato_lila")
+def rents_040014_boato_lila():
+    return render_template("rents_040014_boato_lila.html")
+
+@app.route("/rents_040310_boato_zegries")
+def rents_040310_boato_zegries():
+    return render_template("rents_040310_boato_zegries.html")
+
+@app.route("/rents_040207_boato_tuareg")
+def rents_040207_boato_tuareg():
+    return render_template("rents_040207_boato_tuareg.html")
+
+@app.route("/rents_040807_boato_azul_beduinas")
+def rents_040807_boato_azul_beduinas():
+    return render_template("rents_040807_boato_azul_beduinas.html")
+
+@app.route("/rents_040006_boato_amarillo")
+def rents_040006_boato_amarillo():
+    return render_template("rents_040006_boato_amarillo.html")
+
+@app.route("/rents_040020_boato_altea")
+def rents_040020_boato_altea():
+    return render_template("rents_040020_boato_altea.html")
+
+@app.route("/rents_040705_boato_jeque")
+def rents_040705_boato_jeque():
+    return render_template("rents_040705_boato_jeque.html")
+
+@app.route("/rents_040008_boato_rojo_dorado")
+def rents_040008_boato_rojo_dorado():
+    return render_template("rents_040008_boato_rojo_dorado.html")
+
+
 @app.route("/sales")
 def sales():
     return render_template("sales.html")

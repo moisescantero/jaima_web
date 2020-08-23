@@ -8,6 +8,8 @@
     padding: 0;
     margin: 0;
     border: 0; 
+    text-transform: uppercase;
+
 }
  
 #menu ul, li {
@@ -70,8 +72,8 @@
  
 #menu span, #menu a {
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: Arial;
+    font-size: 10px;
     text-decoration: none; 
 }
  
@@ -130,15 +132,6 @@
     float: right;
 }
 
-.button{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: small;
-    color: white;
-    background-color: #462255;
-    
-}
 
 .parrafo_indice{
     margin-top: -300px;
@@ -189,7 +182,6 @@
 
   
 .ampliar_img{       /* la imagen en su forma normal */
-
     -webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
     -moz-transform:scale(1); /*Mozilla scale version*/
     -o-transform:scale(1); /*Opera scale version*/
@@ -212,6 +204,21 @@
 /*CSS style for rents.html, rents_boatos.html, rents_capitanes.html, rents_hombres.html, rents_mujeres.html, rents_nin@s.html 
     and rents_reyes.html*/
 
+.button_back{
+    font-family: Arial;
+    color: white;
+    line-height: 160%;
+    padding: 11px 28px 11px 28px;
+    width: 253px;   
+    text-align: center;
+    font-size: 11px;
+    background: #a06195; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
 .rents_header{
     margin-top: -300px;
     text-align: left;
@@ -221,7 +228,6 @@
 }
 
 .ampliar_img_rents{       /* la imagen en su forma normal */
-
     -webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
     -moz-transform:scale(1); /*Mozilla scale version*/
     -o-transform:scale(1); /*Opera scale version*/
@@ -231,15 +237,21 @@
     opacity: 0.5;
 }
 .ampliar_img_rents:hover{     /* al pasar el cursor por encima SE AMPLIA*/
-
-    -webkit-transform:scale(2); /*Webkit:Modificamos tamaño a escala*/
-    -moz-transform:scale(2); /*Mozilla:Modificamos tamaño a escala*/
-    -o-transform:scale(2); /*Opera:Modificamos tamaño a escala*/
+    -webkit-transform:scale(1.5); /*Webkit:Modificamos tamaño a escala*/
+    -moz-transform:scale(1.5); /*Mozilla:Modificamos tamaño a escala*/
+    -o-transform:scale(1.5); /*Opera:Modificamos tamaño a escala*/
     -webkit-transition-duration: 0.5s; /*Webkit:Duración de la animación*/
     -moz-transition-duration: 0.5s; /*Mozilla:Duración de la animació*/
     -o-transition-duration: 0.5s; /*Opera:Duración de la animació*/
     opacity: 1;
 }
 
-
+.rents_boato_div{
+    display: inline-block;
+    text-align: justify;
+    margin-top: -35px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
 
