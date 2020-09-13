@@ -266,6 +266,93 @@ def rents_010212_hombre_tuareg():
 @app.route("/rents_010211_hombre_tuareg")
 def rents_010211_hombre_tuareg():
     return render_template("rents_010211_hombre_tuareg.html")
+@app.route("/rents_010411_hombre_jenizaro")
+def rents_010411_hombre_jenizaro():
+    return render_template("rents_010411_hombre_jenizaro.html")
+@app.route("/rents_010111_hombre_abencerraje")
+def rents_010111_hombre_abencerraje():
+    return render_template("rents_010111_hombre_abencerraje.html")
+@app.route("/rents_010611_hombre_sarraceno")
+def rents_010611_hombre_sarraceno():
+    return render_template("rents_010611_hombre_sarraceno.html")
+@app.route("/rents_010511_hombre_ecuador")
+def rents_010511_hombre_ecuador():
+    return render_template("rents_010511_hombre_ecuador.html")
+@app.route("/rents_010310_hombre_zegrie")
+def rents_010310_hombre_zegrie():
+    return render_template("rents_010310_hombre_zegrie.html")
+@app.route("/rents_010110_hombre_abencerraje")
+def rents_010110_hombre_abencerraje():
+    return render_template("rents_010110_hombre_abencerraje.html")
+@app.route("/rents_010510_hombre_ecuador")
+def rents_010510_hombre_ecuador():
+    return render_template("rents_010510_hombre_ecuador.html")
+@app.route("/rents_010109_hombre_abencerraje")
+def rents_010109_hombre_abencerraje():
+    return render_template("rents_010109_hombre_abencerraje.html")
+@app.route("/rents_010609_hombre_sarraceno")
+def rents_010609_hombre_sarraceno():
+    return render_template("rents_010609_hombre_sarraceno.html")
+@app.route("/rents_010409_hombre_jenizaro")
+def rents_010409_hombre_jenizaro():
+    return render_template("rents_010409_hombre_jenizaro.html")
+@app.route("/rents_010509_hombre_ecuador")
+def rents_010509_hombre_ecuador():
+    return render_template("rents_010509_hombre_ecuador.html")
+@app.route("/rents_010209_hombre_tuareg")
+def rents_010209_hombre_tuareg():
+    return render_template("rents_010209_hombre_tuareg.html")
+@app.route("/rents_010709_hombre_jeque")
+def rents_010709_hombre_jeque():
+    return render_template("rents_010709_hombre_jeque.html")
+@app.route("/rents_010608_hombre_sarraceno")
+def rents_010608_hombre_sarraceno():
+    return render_template("rents_010608_hombre_sarraceno.html")
+@app.route("/rents_010408_hombre_jenizaro")
+def rents_010408_hombre_jenizaro():
+    return render_template("rents_010408_hombre_jenizaro.html")
+@app.route("/rents_010108_hombre_abencerraje")
+def rents_010108_hombre_abencerraje():
+    return render_template("rents_010108_hombre_abencerraje.html")
+@app.route("/rents_010206_hombre_tuareg")
+def rents_010206_hombre_tuareg():
+    return render_template("rents_010206_hombre_tuareg.html")
+@app.route("/rents_010606_hombre_sarraceno")
+def rents_010606_hombre_sarraceno():
+    return render_template("rents_010606_hombre_sarraceno.html")
+
+#rutas para alquileres escuadras femeninas
+@app.route("/rents_women")
+def rents_women():
+    return render_template("rents_women.html")
+@app.route("/rents_020519_mujer_ecuador")
+def rents_020519_mujer_ecuador():
+    return render_template("rents_020519_mujer_ecuador.html")
+@app.route("/rents_020219_mujer_tuaresa")
+def rents_020219_mujer_tuaresa():
+    return render_template("rents_020219_mujer_tuaresa.html")
+@app.route("/rents_021020_mujer_guerrera")
+def rents_021020_mujer_guerrera():
+    return render_template("rents_021020_mujer_guerrera.html")
+@app.route("/rents_020819_mujer_beduina")
+def rents_020819_mujer_beduina():
+    return render_template("rents_020819_mujer_beduina.html")
+@app.route("/rents_020419_mujer_jenizara")
+def rents_020419_mujer_jenizara():
+    return render_template("rents_020419_mujer_jenizara.html")
+@app.route("/rents_020319_mujer_zegrie")
+def rents_020319_mujer_zegrie():
+    return render_template("rents_020319_mujer_zegrie.html")
+@app.route("/rents_020318_mujer_zegrie")
+def rents_020318_mujer_zegrie():
+    return render_template("rents_020318_mujer_zegrie.html")
+@app.route("/rents_020218_mujer_tuaresa")
+def rents_020218_mujer_tuaresa():
+    return render_template("rents_020218_mujer_tuaresa.html")
+
+
+
+
 
 
 
