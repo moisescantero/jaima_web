@@ -349,6 +349,82 @@ def rents_020318_mujer_zegrie():
 @app.route("/rents_020218_mujer_tuaresa")
 def rents_020218_mujer_tuaresa():
     return render_template("rents_020218_mujer_tuaresa.html")
+@app.route("/rents_020518_mujer_ecuador")
+def rents_020518_mujer_ecuador():
+    return render_template("rents_020518_mujer_ecuador.html")
+@app.route("/rents_020818_mujer_beduina")
+def rents_020818_mujer_beduina():
+    return render_template("rents_020818_mujer_beduina.html")
+@app.route("/rents_021018_mujer_guerrera")
+def rents_021018_mujer_guerrera():
+    return render_template("rents_021018_mujer_guerrera.html")
+@app.route("/rents_021117_mujer_dragona")
+def rents_021117_mujer_dragona():
+    return render_template("rents_021117_mujer_dragona.html")
+@app.route("/rents_020817_mujer_beduina")
+def rents_020817_mujer_beduina():
+    return render_template("rents_020817_mujer_beduina.html")
+@app.route("/rents_020217_mujer_tuaresa")
+def rents_020217_mujer_tuaresa():
+    return render_template("rents_020217_mujer_tuaresa.html")
+@app.route("/rents_020716_mujer_jeque")
+def rents_020716_mujer_jeque():
+    return render_template("rents_020716_mujer_jeque.html")
+@app.route("/rents_020416_mujer_jenízara")
+def rents_020416_mujer_jenízara():
+    return render_template("rents_020416_mujer_jenízara.html")
+@app.route("/rents_020216_mujer_tuaresa")
+def rents_020216_mujer_tuaresa():
+    return render_template("rents_020216_mujer_tuaresa.html")
+@app.route("/rents_020816_mujer_beduina")
+def rents_020816_mujer_beduina():
+    return render_template("rents_020816_mujer_beduina.html")
+@app.route("/rents_020316_mujer_zegrie")
+def rents_020316_mujer_zegrie():
+    return render_template("rents_020316_mujer_zegrie.html")
+@app.route("/rents_020516_mujer_ecuador")
+def rents_020516_mujer_ecuador():
+    return render_template("rents_020516_mujer_ecuador.html")
+@app.route("/rents_020815_mujer_beduina")
+def rents_020815_mujer_beduina():
+    return render_template("rents_020815_mujer_beduina.html")
+@app.route("/rents_020515_mujer_ecuador")
+def rents_020515_mujer_ecuador():
+    return render_template("rents_020515_mujer_ecuador.html")
+@app.route("/rents_021015_mujer_guerrera")
+def rents_021015_mujer_guerrera():
+    return render_template("rents_021015_mujer_guerrera.html")
+@app.route("/rents_021014_mujer_guerrera")
+def rents_021014_mujer_guerrera():
+    return render_template("rents_021014_mujer_guerrera.html")
+@app.route("/rents_020814_mujer_guerrera")
+def rents_020814_mujer_guerrera():
+    return render_template("rents_020814_mujer_guerrera.html")
+@app.route("/rents_020414_mujer_jenizara")
+def rents_020414_mujer_jenizara():
+    return render_template("rents_020414_mujer_jenizara.html")
+@app.route("/rents_020514_mujer_ecuador")
+def rents_020514_mujer_ecuador():
+    return render_template("rents_020514_mujer_ecuador.html")
+@app.route("/rents_020913_mujer_ibi")
+def rents_020913_mujer_ibi():
+    return render_template("rents_020913_mujer_ibi.html")
+@app.route("/rents_020413_mujer_jenizara")
+def rents_020413_mujer_jenizara():
+    return render_template("rents_020413_mujer_jenizara.html")
+@app.route("/rents_021013_mujer_guerrera")
+def rents_021013_mujer_guerrera():
+    return render_template("rents_021013_mujer_guerrera.html")
+@app.route("/rents_020513_mujer_ecuador")
+def rents_020513_mujer_ecuador():
+    return render_template("rents_020513_mujer_ecuador.html")
+@app.route("/rents_020313_mujer_zegrie")
+def rents_020313_mujer_zegrie():
+    return render_template("rents_020313_mujer_zegrie.html")
+
+
+
+
 
 
 
