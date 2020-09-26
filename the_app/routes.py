@@ -421,6 +421,160 @@ def rents_020513_mujer_ecuador():
 @app.route("/rents_020313_mujer_zegrie")
 def rents_020313_mujer_zegrie():
     return render_template("rents_020313_mujer_zegrie.html")
+@app.route("/rents_020312_mujer_zegrie")
+def rents_020312_mujer_zegrie():
+    return render_template("rents_020312_mujer_zegrie.html")
+@app.route("/rents_020812_mujer_beduina")
+def rents_020812_mujer_beduina():
+    return render_template("rents_020812_mujer_beduina.html")
+@app.route("/rents_020212_mujer_tuaresa")
+def rents_020212_mujer_tuaresa():
+    return render_template("rents_020212_mujer_tuaresa.html")
+@app.route("/rents_020211_mujer_tuaresa")
+def rents_020211_mujer_tuaresa():
+    return render_template("rents_020211_mujer_tuaresa.html")
+@app.route("/rents_020411_mujer_jenizara")
+def rents_020411_mujer_jenizara():
+    return render_template("rents_020411_mujer_jenizara.html")
+@app.route("/rents_020811_mujer_beduina")
+def rents_020811_mujer_beduina():
+    return render_template("rents_020811_mujer_beduina.html")
+@app.route("/rents_020611_mujer_sarracena")
+def rents_020611_mujer_sarracena():
+    return render_template("rents_020611_mujer_sarracena.html")
+@app.route("/rents_021011_mujer_guerrera")
+def rents_021011_mujer_guerrera():
+    return render_template("rents_021011_mujer_guerrera.html")
+@app.route("/rents_020511_mujer_ecuador")
+def rents_020511_mujer_ecuador():
+    return render_template("rents_020511_mujer_ecuador.html")
+@app.route("/rents_020310_mujer_zegrie")
+def rents_020310_mujer_zegrie():
+    return render_template("rents_020310_mujer_zegrie.html")
+@app.route("/rents_020810_mujer_beduina")
+def rents_020810_mujer_beduina():
+    return render_template("rents_020810_mujer_beduina.html")
+@app.route("/rents_020510_mujer_ecuador")
+def rents_020510_mujer_ecuador():
+    return render_template("rents_020510_mujer_ecuador.html")
+@app.route("/rents_020809_mujer_beduina")
+def rents_020809_mujer_beduina():
+    return render_template("rents_020809_mujer_beduina.html")
+@app.route("/rents_020609_mujer_sarracena")
+def rents_020609_mujer_sarracena():
+    return render_template("rents_020609_mujer_sarracena.html")
+@app.route("/rents_020409_mujer_jenizara")
+def rents_020409_mujer_jenizara():
+    return render_template("rents_020409_mujer_jenizara.html")
+@app.route("/rents_020509_mujer_ecuador")
+def rents_020509_mujer_ecuador():
+    return render_template("rents_020509_mujer_ecuador.html")
+@app.route("/rents_020209_mujer_tuaresa")
+def rents_020209_mujer_tuaresa():
+    return render_template("rents_020209_mujer_tuaresa.html")
+@app.route("/rents_020709_mujer_jeque")
+def rents_020709_mujer_jeque():
+    return render_template("rents_020709_mujer_jeque.html")
+@app.route("/rents_020608_mujer_sarracena")
+def rents_020608_mujer_sarracena():
+    return render_template("rents_020608_mujer_sarracena.html")
+@app.route("/rents_020408_mujer_jenizara")
+def rents_020408_mujer_jenizara():
+    return render_template("rents_020408_mujer_jenizara.html")
+@app.route("/rents_020206_mujer_tuaresa")
+def rents_020206_mujer_tuaresa():
+    return render_template("rents_020206_mujer_tuaresa.html")
+@app.route("/rents_020606_mujer_sarracena")
+def rents_020606_mujer_sarracena():
+    return render_template("rents_020606_mujer_sarracena.html")
+
+#rutas para alquileres escuadras infantiles
+@app.route("/rents_kids")
+def rents_kids():
+    return render_template("rents_kids.html")
+@app.route("/rents_030818_niños_beduina")
+def rents_030818_niños_beduina():
+    return render_template("rents_030818_niños_beduina.html")
+@app.route("/rents_030817_niños_beduina")
+def rents_030817_niños_beduina():
+    return render_template("rents_030817_niños_beduina.html")
+@app.route("/rents_030816_niños_beduina")
+def rents_030816_niños_beduina():
+    return render_template("rents_030816_niños_beduina.html")
+@app.route("/rents_030815_niños_beduina")
+def rents_030815_niños_beduina():
+    return render_template("rents_030815_niños_beduina.html")
+@app.route("/rents_010512_pollito_ecuador")
+def rents_010512_pollito_ecuador():
+    return render_template("rents_010512_pollito_ecuador.html")
+@app.route("/rents_020512_pollita_ecuador")
+def rents_020512_pollita_ecuador():
+    return render_template("rents_020512_pollita_ecuador.html")
+@app.route("/rents_030716_niñas_naranjas")
+def rents_030716_niñas_naranjas():
+    return render_template("rents_030716_niñas_naranjas.html")
+@app.route("/rents_030515_niños_ecuador")
+def rents_030515_niños_ecuador():
+    return render_template("rents_030515_niños_ecuador.html")
+@app.route("/rents_030814_niños_beduina")
+def rents_030814_niños_beduina():
+    return render_template("rents_030814_niños_beduina.html")
+@app.route("/rents_030913_niños_ibi")
+def rents_030913_niños_ibi():
+    return render_template("rents_030913_niños_ibi.html")
+@app.route("/rents_030413_niños_jenizaros")
+def rents_030413_niños_jenizaros():
+    return render_template("rents_030413_niños_jenizaros.html")
+@app.route("/rents_030812_niños_beduina")
+def rents_030812_niños_beduina():
+    return render_template("rents_030812_niños_beduina.html")
+@app.route("/rents_030312_niños_zegrie")
+def rents_030312_niños_zegrie():
+    return render_template("rents_030312_niños_zegrie.html")
+@app.route("/rents_030611_niños_sarraceno")
+def rents_030611_niños_sarraceno():
+    return render_template("rents_030611_niños_sarraceno.html")
+@app.route("/rents_030811_niños_beduina")
+def rents_030811_niños_beduina():
+    return render_template("rents_030811_niños_beduina.html")
+@app.route("/rents_030211_niños_tuareg")
+def rents_030211_niños_tuareg():
+    return render_template("rents_030211_niños_tuareg.html")
+@app.route("/rents_030810_niños_beduina")
+def rents_030810_niños_beduina():
+    return render_template("rents_030810_niños_beduina.html")
+@app.route("/rents_030310_niños_zegrie")
+def rents_030310_niños_zegrie():
+    return render_template("rents_030310_niños_zegrie.html")
+@app.route("/rents_030511_niños_ecuador")
+def rents_030511_niños_ecuador():
+    return render_template("rents_030511_niños_ecuador.html")
+@app.route("/rents_030809_niños_beduina")
+def rents_030809_niños_beduina():
+    return render_template("rents_030809_niños_beduina.html")
+@app.route("/rents_030209_niños_tuareg")
+def rents_030209_niños_tuareg():
+    return render_template("rents_030209_niños_tuareg.html")
+@app.route("/rents_030608_niños_sarraceno")
+def rents_030608_niños_sarraceno():
+    return render_template("rents_030608_niños_sarraceno.html")
+@app.route("/rents_030808_niños_beduina")
+def rents_030808_niños_beduina():
+    return render_template("rents_030808_niños_beduina.html")
+@app.route("/rents_030408_niños_jenizaros")
+def rents_030408_niños_jenizaros():
+    return render_template("rents_030408_niños_jenizaros.html")
+@app.route("/rents_030807_niños_beduina")
+def rents_030807_niños_beduina():
+    return render_template("rents_030807_niños_beduina.html")
+
+
+
+
+
+
+
+
 
 
 
