@@ -568,6 +568,109 @@ def rents_030408_niños_jenizaros():
 def rents_030807_niños_beduina():
     return render_template("rents_030807_niños_beduina.html")
 
+#rutas para alquileres reyes magos
+@app.route("/rents_reyes_magos")
+def rents_reyes_magos():
+    return render_template("rents_reyes_magos.html")
+@app.route("/rents_070101_rey_mago")
+def rents_070101_rey_mago():
+    return render_template("rents_070101_rey_mago.html")
+@app.route("/rents_070102_rey_mago")
+def rents_070102_rey_mago():
+    return render_template("rents_070102_rey_mago.html")
+@app.route("/rents_070103_rey_mago")
+def rents_070103_rey_mago():
+    return render_template("rents_070103_rey_mago.html")
+@app.route("/rents_070201_rey_mago")
+def rents_070201_rey_mago():
+    return render_template("rents_070201_rey_mago.html")
+@app.route("/rents_070202_rey_mago")
+def rents_070202_rey_mago():
+    return render_template("rents_070202_rey_mago.html")
+@app.route("/rents_070203_rey_mago")
+def rents_070203_rey_mago():
+    return render_template("rents_070203_rey_mago.html")
+@app.route("/rents_070204_rey_mago")
+def rents_070204_rey_mago():
+    return render_template("rents_070204_rey_mago.html")
+@app.route("/rents_070205_rey_mago")
+def rents_070205_rey_mago():
+    return render_template("rents_070205_rey_mago.html")
+@app.route("/rents_070206_rey_mago")
+def rents_070206_rey_mago():
+    return render_template("rents_070206_rey_mago.html")
+@app.route("/rents_070207_rey_mago")
+def rents_070207_rey_mago():
+    return render_template("rents_070207_rey_mago.html")
+@app.route("/rents_070208_rey_mago")
+def rents_070208_rey_mago():
+    return render_template("rents_070208_rey_mago.html")
+@app.route("/rents_070209_rey_mago")
+def rents_070209_rey_mago():
+    return render_template("rents_070209_rey_mago.html")
+@app.route("/rents_070301_rey_mago")
+def rents_070301_rey_mago():
+    return render_template("rents_070301_rey_mago.html")
+@app.route("/rents_070302_rey_mago")
+def rents_070302_rey_mago():
+    return render_template("rents_070302_rey_mago.html")
+@app.route("/rents_070303_rey_mago")
+def rents_070303_rey_mago():
+    return render_template("rents_070303_rey_mago.html")
+@app.route("/rents_070304_rey_mago")
+def rents_070304_rey_mago():
+    return render_template("rents_070304_rey_mago.html")
+@app.route("/rents_070305_rey_mago")
+def rents_070305_rey_mago():
+    return render_template("rents_070305_rey_mago.html")
+@app.route("/rents_070306_rey_mago")
+def rents_070306_rey_mago():
+    return render_template("rents_070306_rey_mago.html")
+@app.route("/rents_070307_rey_mago")
+def rents_070307_rey_mago():
+    return render_template("rents_070307_rey_mago.html")
+@app.route("/rents_070308_rey_mago")
+def rents_070308_rey_mago():
+    return render_template("rents_070308_rey_mago.html")
+@app.route("/rents_070309_rey_mago")
+def rents_070309_rey_mago():
+    return render_template("rents_070309_rey_mago.html")
+@app.route("/rents_070310_rey_mago")
+def rents_070310_rey_mago():
+    return render_template("rents_070310_rey_mago.html")
+@app.route("/rents_070311_rey_mago")
+def rents_070311_rey_mago():
+    return render_template("rents_070311_rey_mago.html")
+@app.route("/rents_070312_rey_mago")
+def rents_070312_rey_mago():
+    return render_template("rents_070312_rey_mago.html")
+@app.route("/rents_070313_rey_mago")
+def rents_070313_rey_mago():
+    return render_template("rents_070313_rey_mago.html")
+@app.route("/rents_070314_rey_mago")
+def rents_070314_rey_mago():
+    return render_template("rents_070314_rey_mago.html")
+@app.route("/rents_070315_rey_mago")
+def rents_070315_rey_mago():
+    return render_template("rents_070315_rey_mago.html")
+@app.route("/rents_070316_rey_mago")
+def rents_070316_rey_mago():
+    return render_template("rents_070316_rey_mago.html")
+@app.route("/rents_070317_rey_mago")
+def rents_070317_rey_mago():
+    return render_template("rents_070317_rey_mago.html")
+@app.route("/rents_070318_rey_mago")
+def rents_070318_rey_mago():
+    return render_template("rents_070318_rey_mago.html")
+@app.route("/rents_070319_rey_mago")
+def rents_070319_rey_mago():
+    return render_template("rents_070319_rey_mago.html")
+@app.route("/rents_070320_rey_mago")
+def rents_070320_rey_mago():
+    return render_template("rents_070320_rey_mago.html")
+@app.route("/rents_070321_rey_mago")
+def rents_070321_rey_mago():
+    return render_template("rents_070321_rey_mago.html")
 
 
 
