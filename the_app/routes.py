@@ -672,26 +672,53 @@ def rents_070320_rey_mago():
 def rents_070321_rey_mago():
     return render_template("rents_070321_rey_mago.html")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#rutas para venta de trajes
 @app.route("/sales")
 def sales():
     return render_template("sales.html")
+@app.route("/sales_010507_pollito_rosa")
+def sales_010507_pollito_rosa():
+    return render_template("sales_010507_pollito_rosa.html")
+@app.route("/sales_040001_boato_negro_plata")
+def sales_040001_boato_negro_plata():
+    return render_template("sales_040001_boato_negro_plata.html")
+@app.route("/sales_030705_niños_jeques")
+def sales_030705_niños_jeques():
+    return render_template("sales_030705_niños_jeques.html")
+@app.route("/sales_020205_mujer_tuaresa")
+def sales_020205_mujer_tuaresa():
+    return render_template("sales_020205_mujer_tuaresa.html")
+@app.route("/sales_010406_hombre_jenizaro")
+def sales_010406_hombre_jenizaro():
+    return render_template("sales_010406_hombre_jenizaro.html")
+@app.route("/sales_010105_hombre_abencerraje")
+def sales_010105_hombre_abencerraje():
+    return render_template("sales_010105_hombre_abencerraje.html")
+@app.route("/sales_010005_hombre_escorpion")
+def sales_010005_hombre_escorpion():
+    return render_template("sales_010005_hombre_escorpion.html")
+@app.route("/sales_010006_hombre_escorpion")
+def sales_010006_hombre_escorpion():
+    return render_template("sales_010006_hombre_escorpion.html")
+@app.route("/sales_020508_pollita_azul")
+def sales_020508_pollita_azul():
+    return render_template("sales_020508_pollita_azul.html")
+@app.route("/sales_020506_pollita_lila")
+def sales_020506_pollita_lila():
+    return render_template("sales_020506_pollita_lila.html")
+@app.route("/sales_020705_mujer_jeque")
+def sales_020705_mujer_jeque():
+    return render_template("sales_020705_mujer_jeque.html")
+@app.route("/sales_010506_pollito_lila")
+def sales_010506_pollito_lila():
+    return render_template("sales_010506_pollito_lila.html")
+@app.route("/sales_010506_hombre_ecuador")
+def sales_010506_hombre_ecuador():
+    return render_template("sales_010506_hombre_ecuador.html")
+@app.route("/sales_010705_hombre_jeque")
+def sales_010705_hombre_jeque():
+    return render_template("sales_010705_hombre_jeque.html")
+
 
 @app.route("/actuality")
 def actuality():
