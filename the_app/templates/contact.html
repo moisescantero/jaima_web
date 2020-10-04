@@ -8,20 +8,67 @@
     <p>
         <h1 >Contacto con la jaima.</h1>
         <h6 >
-            <h5>Visítanos en nuestra exposición que está en:</h5>
+            <h5>Visítanos en nuestra exposición:</h5>
             Avda. Alicante, 15.<br>
             Villena-Alicante (03400).<br>
             FRENTE A GASOLINERA REPSOL.<br>
             
         </h6>
         <h6 >
-            <h5>Puede llamarnos al móvil:</h5>
+            <h5>También puede llamarnos al móvil:</h5>
             José Vicente: 639241769.<br>
             Eva: 666330949.
         </h6>
         <h6 >
             <h5>O dejarnos sus datos en el siguiente formulario:</h5>
         </h6>
+        <form action="/contact" method="post">     
+            {{ form.hidden_tag() }}<!--etiqueta escondida para el csrftoken-->
+
+            {{ form.user_name.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
+            {{ form.user_name }}<!--mostrar el campo user_name para introducir datos--> 
+            {% if form.user_name.errors %}<!--Si se produce un error para el campo user_name-->
+                {% for error in form.user_name.errors %}<!--Para cada error que se produzca en el campo user_name-->
+                    {{ form.user_name.errors }}<!--Muestra el error correspondiente para el campo user_name-->
+                {% endfor %}
+            {% endif %}
+
+            {{ form.user_email.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
+            {{ form.user_email }}<!--mostrar el campo user_email para introducir datos--> 
+            {% if form.user_email.errors %}<!--Si se produce un error para el campo user_email-->
+                {% for error in form.user_email.errors %}<!--Para cada error que se produzca en el campo user_email-->
+                    {{ form.user_email.errors }}<!--Muestra el error correspondiente para el campo user_email-->
+                {% endfor %}
+            {% endif %}
+            
+            {{ form.phone.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
+            {{ form.phone }}<!--mostrar el campo phone para introducir datos--> 
+            {% if form.phone.errors %}<!--Si se produce un error para el campo phone-->
+                {% for error in form.phone.errors %}<!--Para cada error que se produzca en el campo phone-->
+                    {{ form.phone.errors }}<!--Muestra el error correspondiente para el campo phone-->
+                {% endfor %}
+            {% endif %}
+
+            {{ form.message.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
+            {{ form.message }}<!--mostrar el campo message para introducir datos--> 
+            {% if form.message.errors %}<!--Si se produce un error para el campo message-->
+                {% for error in form.message.errors %}<!--Para cada error que se produzca en el campo message-->
+                    {{ form.message.errors }}<!--Muestra el error correspondiente para el campo message-->
+                {% endfor %}
+            {% endif %}
+            
+            {{ form.accept_button(class="button-primary") }}
+            {{ form.cancel_button }}
+
+
+
+        </form>
+
+
+
+
+
+
     </p>
 </div>
 

@@ -1,5 +1,7 @@
 from the_app import app
-from flask import render_template
+from flask import Flask, render_template, request, redirect, url_for, flash#importar funcionalidad flask para hacer peticiones, redirecciones,etc
+from the_app.forms import ContactForm#importar clase ContactForm para usar formularios
+
 
 
 @app.route("/")
@@ -724,9 +726,17 @@ def sales_010705_hombre_jeque():
 def actuality():
     return render_template("actuality.html")
 
-@app.route("/contact")
+@app.route("/contact", methods=['GET','POST'])
 def contact():
-    return render_template("contact.html")
+    form = ContactForm(request.form)
+
+    if request.method == "GET":#PETICIÓN GET SOLO PARA OBTENER DATOS
+        return render_template("contact.html", form=form)
+
+    else:#PETICIÓN POST PARA ENVIAR DATOS SIEMPRE (NO SE VEN LOS DATOS EN EL NAVEGADOR Y ES MÁS SEGURO)
+        return render_template("Probando GET Y POST")
+
+
 
 @app.route("/my_jaima")
 def my_jaima():
