@@ -8,7 +8,7 @@
     <p>
         <h1 >Contacto con la jaima.</h1>
         <h6 >
-            <h5>Visítanos en nuestra exposición:</h5>
+            <h5>Visítenos en nuestra exposición:</h5>
             Avda. Alicante, 15.<br>
             Villena-Alicante (03400).<br>
             FRENTE A GASOLINERA REPSOL.<br>
@@ -20,7 +20,7 @@
             Eva: 666330949.
         </h6>
         <h6 >
-            <h5>O dejarnos sus datos en el siguiente formulario:</h5>
+            <h5>O déjenos sus datos usando el siguiente formulario:</h5>
         </h6>
         <form action="/contact" method="post">     
             {{ form.hidden_tag() }}<!--etiqueta escondida para el csrftoken-->
@@ -57,8 +57,10 @@
                 {% endfor %}
             {% endif %}
             
-            {{ form.accept_button(class="button-primary") }}
-            {{ form.cancel_button }}
+                       
+            {{ form.accept_button(class="button_back") }}
+                
+            {{ form.need_input.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
 
 
 

@@ -1,7 +1,9 @@
 from the_app import app
 from flask import Flask, render_template, request, redirect, url_for, flash#importar funcionalidad flask para hacer peticiones, redirecciones,etc
 from the_app.forms import ContactForm#importar clase ContactForm para usar formularios
-
+import smtplib 
+from flask_mail import Message
+from the_app import mail
 
 
 @app.route("/")
@@ -734,7 +736,14 @@ def contact():
         return render_template("contact.html", form=form)
 
     else:#PETICIÓN POST PARA ENVIAR DATOS SIEMPRE (NO SE VEN LOS DATOS EN EL NAVEGADOR Y ES MÁS SEGURO)
-        return render_template("Probando GET Y POST")
+        
+        msg = Message("Probando enviar correos a gmail usando flask",#asunto del email, remitente y destinatario
+              sender="geosoltermic@gmail.com",
+              recipients=["moisescantero@gmail.com"])
+        msg.body = 'Esto es una prueba de que he podido mandar un correo a moisescantero@gmail.com desde flask usando python.'
+        mail.send(msg)
+        return render_template("contact.html", form=form)
+        
 
 
 

@@ -1,1 +1,7 @@
-SECRET_KEY = "*;M@t583dv$~^9[y%Hx7`~2A#;k23:"
+SECRET_KEY = "CLAVE SECRETA"
+# Configuración del email
+MAIL_SERVER = "servidor smtp del servidor que uses, ejemplo:smtp.gmail.com"
+MAIL_PORT = 587
+MAIL_USERNAME = "nombre de usuario, ejemplo:correo@gmail.com"
+MAIL_PASSWORD = "constraseña tuya"
+MAIL_USE_TLS = True

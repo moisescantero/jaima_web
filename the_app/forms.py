@@ -21,10 +21,11 @@ def validate_email(form, field):#valida que el campo tenga valores.
 class ContactForm(FlaskForm):
     id = HiddenField('id')
     
-    user_name = StringField("Nombre completo: ", validators=[DataRequired(message="Este campo no puede estar vacío.")])#campo para nombre completo definido como string y con validadores
-    user_email = StringField("Correo electrónico: ", validators=[DataRequired(message="Este campo no puede estar vacío."), validate_email])#campo para correo eléctronico definido como string y con validadores
-    phone = DecimalField("Teléfono móvil: ", places=9, validators=[DataRequired(message="Este campo no puede estar vacío."), validate_phone])#campo para nombre completo definido como string y con validadores
-    message = StringField("Mensaje: ", validators=[DataRequired(message="Indique brevemente su consulta.")])
+    user_name = StringField("Nombre completo(*): ", validators=[DataRequired(message="Este campo no puede estar vacío.")])#campo para nombre completo definido como string y con validadores
+    user_email = StringField("Correo electrónico(*): ", validators=[DataRequired(message="Este campo no puede estar vacío."), validate_email])#campo para correo eléctronico definido como string y con validadores
+    phone = DecimalField("Teléfono móvil(*): ", places=9, validators=[DataRequired(message="Este campo no puede estar vacío."), validate_phone])#campo para nombre completo definido como string y con validadores
+    message = StringField("Mensaje(*): ", validators=[DataRequired(message="Indique brevemente su consulta.")])
 
     accept_button = SubmitField("Enviar")
-    cancel_button = SubmitField("Cancelar")
+    
+    need_input = StringField("(*) Campos necesarios.")
