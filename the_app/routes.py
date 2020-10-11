@@ -737,10 +737,14 @@ def contact():
 
     else:#PETICIÓN POST PARA ENVIAR DATOS SIEMPRE (NO SE VEN LOS DATOS EN EL NAVEGADOR Y ES MÁS SEGURO)
         
-        msg = Message("Probando enviar correos a gmail usando flask",#asunto del email, remitente y destinatario
-              sender="geosoltermic@gmail.com",
-              recipients=["moisescantero@gmail.com"])
-        msg.body = 'Esto es una prueba de que he podido mandar un correo a moisescantero@gmail.com desde flask usando python.'
+        msg = Message("Solicitud de información de {}.".format(form.user_name.data),#asunto del email, remitente y destinatario
+              sender="{}".format(form.user_email.data),
+              recipients=["evamagihe@gmail.com","moisescantero@gmail.com"])
+        msg.body = ("Nombre completo: {}"
+        .format(form.user_name.data) + "\n" + 
+        "Correo electrónico: {}".format(form.user_email.data) + "\n" + 
+        "Móvil: {}".format(form.phone.data) + "\n" + 
+        "Mensaje: {}".format(form.message.data + "\n" + "--Este correo se envía a través del formulario de contacto en http://www.la-jaima.es"))
         mail.send(msg)
         return render_template("contact.html", form=form)
         
