@@ -30,9 +30,6 @@ def about_clothing_store():
 
 
 #rutas para alquileres de boatos
-@app.route("/rents")
-def rents():
-    return render_template("rents.html")
 @app.route("/rents_boatos")
 def rents_boatos():
     return render_template("rents_boatos.html")
@@ -723,10 +720,12 @@ def sales_010506_hombre_ecuador():
 def sales_010705_hombre_jeque():
     return render_template("sales_010705_hombre_jeque.html")
 
+#rutas para apartado de actualidad: secciones blog, vídeos, instagram y galería fotos 2018
 
-@app.route("/actuality")
-def actuality():
-    return render_template("actuality.html")
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
+
 
 @app.route("/contact", methods=['GET','POST'])
 def contact():
