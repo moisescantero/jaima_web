@@ -214,7 +214,7 @@
     color: white;
     line-height: 160%;
     padding: 11px 28px 11px 28px;
-    width: 253px;   
+      
     text-align: center;
     font-size: 11px;
     background: #0017ED; 
@@ -261,4 +261,23 @@
 }
 
 
+/*CSS style para caja de texto en formulario dar alta de post*/
+
+.body_post_div{
+    text-align: justify;
+    width: 945px;
+    height: 250px;
+}
+
+.blog_header_div{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.blog_post_div{
+    text-align: justify;
+    width: 945px;
+    height: 250px;
+}
 

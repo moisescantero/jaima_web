@@ -1,6 +1,6 @@
 from the_app import app
-from flask import Flask, render_template, request, redirect, url_for, flash#importar funcionalidad flask para hacer peticiones, redirecciones,etc
-from the_app.forms import ContactForm#importar clase ContactForm para usar formularios
+from flask import Flask, render_template, request, redirect, url_for, flash, redirect#importar funcionalidad flask para hacer peticiones, redirecciones,etc
+from the_app.forms import ContactForm, CreatingForm#importar clase ContactForm para usar formularios
 import smtplib 
 from flask_mail import Message
 from the_app import mail
@@ -9,7 +9,6 @@ from the_app import mail
 @app.route("/")
 def index():
     return render_template("base.html")
-
 
 #rutas para apartado sobre nosotros
 @app.route("/about_us")
@@ -722,9 +721,30 @@ def sales_010705_hombre_jeque():
 
 #rutas para apartado de actualidad: secciones blog, vídeos, instagram y galería fotos 2018
 
-@app.route("/blog")
+@app.route("/blog")#ruta a página home del blog
 def blog():
     return render_template("blog.html")
+
+@app.route("/blog_creating_post", methods=["GET", "POST"])#ruta para mostrar el detalle de una entrada del blog en concreto
+def blog_creating_post():#le pasamos el parámetro slug a la función por si lo necesitamos como por ejemplo para nombre de la url
+    form_post = CreatingForm(request.form)
+
+    if request.method == "GET":#PETICIÓN GET SOLO PARA OBTENER DATOS
+        return render_template("blog_creating_post.html", form=form_post)
+
+    else:#PETICIÓN POST PARA ENVIAR DATOS SIEMPRE (NO SE VEN LOS DATOS EN EL NAVEGADOR Y ES MÁS SEGURO)
+
+        return render_template("blog.html", form=form_post)
+
+
+@app.route("/blog_modificating_post")#ruta para crear un post
+def blog_modificating_post():
+    return render_template("blog_modificating_post.html")
+
+
+
+
+
 
 
 @app.route("/contact", methods=['GET','POST'])
@@ -745,7 +765,12 @@ def contact():
         "Móvil: {}".format(form.phone.data) + "\n" + 
         "Mensaje: {}".format(form.message.data + "\n" + "--Este correo se envía a través del formulario de contacto en http://www.la-jaima.es"))
         mail.send(msg)
-        return render_template("contact.html", form=form)
+
+        next = request.args.get('next', None)#es una buena práctica hacer un redirect para evitar envíos duplicados de datos
+        if next:
+            return redirect(next)
+        return redirect(url_for("contact"))
+    
         
 
 

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+
+{% block contenido%}
+    <div class="about_us_div">
+        
+        <h1>Crear entrada para el blog</h1>
+        <form>
+            <form action="/contact" method="post">     
+                {{ form.hidden_tag() }}<!--etiqueta escondida para el csrftoken-->
+    
+                {{ form.title_post.label }}<!--mostrar etiqueta nombre del campo title_post del formulario-->
+                {{ form.title_post(size=128) }}<br><!--mostrar el campo title_post para introducir datos--> 
+                {% for error in form.title_post.errors %}<!--Para cada error que se produzca en el campo title_post-->
+                    <span style="color: red;">{{ error }}</span><!--Muestra el error correspondiente para el campo title_post-->
+                {% endfor %}
+    
+                {{ form.body_post.label }}<!--mostrar etiqueta nombre del campo body_post del formulario-->
+                <div class="body_post_div">
+                    {{ form.body_post(class="body_post_div") }}<br><!--mostrar el campo body_post para introducir datos-->
+                </div>
+
+                {% for error in form.body_post.errors %}<!--Para cada error que se produzca en el campo body_post-->
+                    <span style="color: red;">{{ error }}<!--Muestra el error correspondiente para el campo body_post-->
+                {% endfor %}
+                
+    
+                {{ form.image_post.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
+                {{ form.image_post }}<!--mostrar el campo image_post para introducir datos--> 
+                {% for error in form.image_post.errors %}<!--Para cada error que se produzca en el campo image_post-->
+                    <span style="color: red;">{{ error }}<!--Muestra el error correspondiente para el campo image_post-->
+                {% endfor %}
+                                
+                           
+                {{ form.accept_button_post(class="button_back") }}
+                    
+                {{ form.need_input.label }}<!--mostrar etiqueta nombre del campo user_name del formulario-->
+    
+            </form>
+
+
+
+
+
+        </form>
+            
+        
+    
+
+
+
+{% endblock %}
+
+
+
